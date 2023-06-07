@@ -76,20 +76,28 @@ button.btn.btn-primary.btn-sm {
   ;
 }
 
-@media(max-width:468px) {
+@media (min-width:300px) and (max-width:468px) {
   input.form-control {
     width: 100%;
   }
-
+  form.w-100 {
+    padding: 0px 0em;
+  }
   button.btn.btn-primary.btn-sm {
-    width: 30%;
-    /* margin-left: 111px; */
+    width: 40%;
+    margin-left: 60px;
     text-align: center;
-    transform: translate(120px, 0px);
+    transform: translate(25px, 0px);
   }
 
   button.btn.btn-transparent {
     width: 100%;
+    padding: 5px 0px;
+  }
+
+  li.list-group-item {
+    width: 80%;
+    transform: translate(30px, 0px);
   }
 
 }
@@ -132,15 +140,17 @@ button.btn.btn-primary.btn-sm {
     transform: translate(65px, 0px);
   }
 }
+
 @media(min-width:992px) and (max-width:1100px) {
-  form.w-100{
+  form.w-100 {
     padding: 0px 7em;
   }
+
   button.btn.btn-primary.btn-sm {
     width: 30%;
     text-align: center;
     transform: translate(230px, 0px);
-  } 
+  }
 
   button.btn.btn-transparent {
     width: 100%;
@@ -149,18 +159,22 @@ button.btn.btn-primary.btn-sm {
   button.btn.btn-transparent.rounded-0 {
     width: 40%;
   }
-  .form-group.p-5{
+
+  .form-group.p-5 {
     /* width: 70&; */
   }
-  ul.list-group{
+
+  ul.list-group {
     padding: 0px 7em;
 
   }
+
   li.list-group-item {
     width: 80%;
     transform: translate(68px, 0px);
   }
 }
+
 @media (min-width:1100px) {
   button.btn.btn-primary.btn-sm {
     width: 30%;
